@@ -23,7 +23,7 @@ jobs:
     environment: ${{ inputs.env_deploy }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Deployment
         run: echo "In this step we deploy ${{ env.APP_NAME }} into test"
       
@@ -34,6 +34,6 @@ jobs:
     environment: ${{ inputs.env_deploy }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Deployment
         run: echo "In this step we deploy ${{ env.APP_NAME }} into prod"
